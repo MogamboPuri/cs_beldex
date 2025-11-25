@@ -1,0 +1,30 @@
+name: example_app
+description: "A cs_beldex Flutter example app"
+repository: https://github.com/cypherstack/cs_monero
+homepage: https://github.com/cypherstack/cs_monero
+issue_tracker: https://github.com/cypherstack/cs_monero/issues
+publish_to: none
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.5.3 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  path_provider: ^2.1.4
+  cs_beldex:
+    path: ../cs_beldex
+  cs_beldex_flutter_libs:
+    path: ../cs_beldex_flutter_libs
+  cs_beldex_flutter_libs_platform_interface:
+    path: ../cs_beldex_flutter_libs_platform_interface
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true

@@ -1,0 +1,15 @@
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+build
+built_outputs
+
+.dart_tool
+
+coverage/
+
+pubspec.lock
+pubspec_overrides.yaml

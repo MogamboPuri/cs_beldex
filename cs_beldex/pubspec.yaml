@@ -1,0 +1,20 @@
+name: cs_beldex
+description: A beldex library
+version: 3.2.0
+repository: https://github.com/cypherstack/cs_beldex
+homepage: https://github.com/cypherstack/cs_beldex
+issue_tracker: https://github.com/cypherstack/cs_beldex/issues
+
+environment:
+  sdk: ">=3.5.3 <4.0.0"
+
+dependencies:
+  ffi: ^2.1.0
+  logger: ^2.4.0
+  meta: ^1.15.0
+  uuid: ^4.5.2
+
+dev_dependencies:
+  lints: ^4.0.0
+  test: ^1.24.0
+  ffigen: ^14.0.0

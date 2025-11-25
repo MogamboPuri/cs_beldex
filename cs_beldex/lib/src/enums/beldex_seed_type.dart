@@ -1,0 +1,1 @@
+enum BeldexSeedType { sixteen, twentyFive }
