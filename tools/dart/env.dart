@@ -1,7 +1,7 @@
 import 'dart:io';
 
-const kMoneroCRepo = "https://github.com/MrCyjaneK/monero_c";
-const kMoneroCHash = "07f7a7f80735130ebfa5842ddee5139076408c0d";
+const kMoneroCRepo = "https://github.com/MogamboPuri/monero_c";
+const kMoneroCHash = "e7cdb532b418a3104c422da16c804f74adf433ad";
 
 final envProjectDir =
     File.fromUri(Platform.script).parent.parent.parent.parent.path;
