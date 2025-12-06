@@ -1,0 +1,29 @@
+import 'package:plugin_platform_interface/plugin_platform_interface.dart';
+
+import 'cs_beldex_flutter_libs_android_x86_64_method_channel.dart';
+
+abstract class CsBeldexFlutterLibsAndroidX8664Platform extends PlatformInterface {
+  /// Constructs a CsBeldexFlutterLibsAndroidX8664Platform.
+  CsBeldexFlutterLibsAndroidX8664Platform() : super(token: _token);
+
+  static final Object _token = Object();
+
+  static CsBeldexFlutterLibsAndroidX8664Platform _instance = MethodChannelCsBeldexFlutterLibsAndroidX8664();
+
+  /// The default instance of [CsBeldexFlutterLibsAndroidX8664Platform] to use.
+  ///
+  /// Defaults to [MethodChannelCsBeldexFlutterLibsAndroidX8664].
+  static CsBeldexFlutterLibsAndroidX8664Platform get instance => _instance;
+
+  /// Platform-specific implementations should set this with their own
+  /// platform-specific class that extends [CsBeldexFlutterLibsAndroidX8664Platform] when
+  /// they register themselves.
+  static set instance(CsBeldexFlutterLibsAndroidX8664Platform instance) {
+    PlatformInterface.verifyToken(instance, _token);
+    _instance = instance;
+  }
+
+  Future<String?> getPlatformVersion() {
+    throw UnimplementedError('platformVersion() has not been implemented.');
+  }
+}

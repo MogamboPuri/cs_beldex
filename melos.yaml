@@ -1,5 +1,5 @@
 name: cs_beldex
-repository: https://github.com/cypherstack/cs_wownero
+repository: https://github.com/MogamboPuri/cs_beldex
 
 packages:
   - "cs_beldex"
@@ -8,11 +8,8 @@ packages:
   - "cs_beldex_flutter_libs_android_x86_64"
   - "cs_beldex_flutter_libs_android_arm64_v8a"
   - "cs_beldex_flutter_libs_android_armeabi_v7a"
-  - "cs_beldex_flutter_libs_ios"
   - "cs_beldex_flutter_libs_linux"
-  - "cs_beldex_flutter_libs_macos"
   - "cs_beldex_flutter_libs_platform_interface"
-  - "cs_beldex_flutter_libs_windows"
   - "example_app"
 
 command:
