@@ -11,14 +11,14 @@
 - A simplified Flutter/Dart Beldex wallet library.
 - Uses https://github.com/MrCyjaneK/monero_c/ for the compiled native libs.
 - If you do not trust the binaries hosted on https://pub.dev you can build from
-  source. Refer to [`cs_monero/README.md`](https://github.com/cypherstack/cs_monero/tree/main/cs_monero/README.md).
+  source. Refer to [`cs_beldex/README.md`](https://github.com/MogamboPuri/cs_beldex/tree/main/cs_beldex/README.md).
 
 ## Quickstart
 1. Add to pubspec.yaml
     ```yaml
     dependencies:
-      cs_monero: 0.0.1
-      cs_monero_flutter_libs: 0.0.1 # Contains native libs required by cs_monero.
+      cs_beldex: 0.0.1
+      cs_beldex_flutter_libs: 0.0.1 # Contains native libs required by cs_beldex.
     ```
 2. Create a wallet
    ```dart
