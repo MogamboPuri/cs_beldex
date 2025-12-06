@@ -1,8 +1,8 @@
 name: example_app
 description: "A cs_beldex Flutter example app"
-repository: https://github.com/cypherstack/cs_monero
-homepage: https://github.com/cypherstack/cs_monero
-issue_tracker: https://github.com/cypherstack/cs_monero/issues
+repository: https://github.com/MogamboPuri/cs_beldex
+homepage: https://github.com/MogamboPuri/cs_beldex
+issue_tracker: https://github.com/MogamboPuri/cs_beldex/issues
 publish_to: none
 
 version: 1.0.0+1
@@ -18,8 +18,6 @@ dependencies:
     path: ../cs_beldex
   cs_beldex_flutter_libs:
     path: ../cs_beldex_flutter_libs
-  cs_beldex_flutter_libs_platform_interface:
-    path: ../cs_beldex_flutter_libs_platform_interface
 
 dev_dependencies:
   flutter_test:
