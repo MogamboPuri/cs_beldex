@@ -72,9 +72,6 @@ String formattedAmount(BigInt value, Type walletType) {
     case const (BeldexWallet):
       decimalPlaces = 12;
       break;
-    case const (BeldexWallet):
-      decimalPlaces = 11;
-      break;
 
     default:
       return "error";

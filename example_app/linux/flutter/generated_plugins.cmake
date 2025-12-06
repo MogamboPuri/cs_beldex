@@ -3,6 +3,7 @@
 #
 
 list(APPEND FLUTTER_PLUGIN_LIST
+  cs_beldex_flutter_libs_linux
 )
 
 list(APPEND FLUTTER_FFI_PLUGIN_LIST

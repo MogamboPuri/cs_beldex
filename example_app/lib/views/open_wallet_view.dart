@@ -99,13 +99,13 @@ class _OpenWalletDialogState extends State<OpenWalletDialog> {
     final wallet = await BeldexWallet.loadWallet(
       path: path,
       password: pw,
-      networkType: Network.mainnet,
+      networkType: Network.testnet,
     );
 
     await wallet.connect(
       daemonAddress: daemonAddress,
-      trusted: true,
-      useSSL: true,
+      trusted: false,
+      useSSL: false,
     );
 
     return wallet;
