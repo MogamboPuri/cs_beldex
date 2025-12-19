@@ -1,0 +1,27 @@
+name: cs_beldex_flutter_libs_windows
+description: Windows implementation of cs_beldex_flutter_libs
+version: 1.2.0
+repository: https://github.com/MogamboPuri/cs_beldex
+homepage: https://github.com/MogamboPuri/cs_beldex
+issue_tracker: https://github.com/MogamboPuri/cs_beldex/issues
+
+environment:
+  sdk: ">=3.5.3 <4.0.0"
+  flutter: ">=3.24.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cs_beldex_flutter_libs_platform_interface: 1.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  plugin:
+    platforms:
+      windows:
+        pluginClass: CsBeldexFlutterLibsWindowsPluginCApi
+        dartPluginClass: CsBeldexFlutterLibsWindows
