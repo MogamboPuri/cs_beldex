@@ -1,6 +1,6 @@
 name: cs_beldex
 description: A beldex library
-version: 3.2.0
+version: 1.0.0
 repository: https://github.com/cypherstack/cs_beldex
 homepage: https://github.com/cypherstack/cs_beldex
 issue_tracker: https://github.com/cypherstack/cs_beldex/issues

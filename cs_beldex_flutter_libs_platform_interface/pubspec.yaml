@@ -1,6 +1,6 @@
 name: cs_beldex_flutter_libs_platform_interface
 description: A common platform interface for cs_beldex_flutter_libs
-version: 1.1.0
+version: 1.0.0
 repository: https://github.com/MogamboPuri/cs_beldex
 homepage: https://github.com/MogamboPuri/cs_beldex
 issue_tracker: https://github.com/MogamboPuri/cs_beldex/issues

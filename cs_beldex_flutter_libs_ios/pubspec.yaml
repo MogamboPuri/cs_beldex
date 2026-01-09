@@ -1,5 +1,5 @@
-name: cs_beldex_flutter_libs_windows
-description: Windows implementation of cs_beldex_flutter_libs
+name: cs_beldex_flutter_libs_ios
+description: Ios implementation of cs_beldex_flutter_libs
 version: 1.0.0
 repository: https://github.com/MogamboPuri/cs_beldex
 homepage: https://github.com/MogamboPuri/cs_beldex
@@ -22,6 +22,6 @@ dev_dependencies:
 flutter:
   plugin:
     platforms:
-      windows:
-        pluginClass: CsBeldexFlutterLibsWindowsPluginCApi
-        dartPluginClass: CsBeldexFlutterLibsWindows
+      ios:
+        pluginClass: CsBeldexFlutterLibsIosPlugin
+        dartPluginClass: CsBeldexFlutterLibsIos

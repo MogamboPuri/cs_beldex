@@ -1,6 +1,6 @@
 name: cs_beldex_flutter_libs
 description: "Binaries required to use cs_beldex in a Flutter project"
-version: 2.0.1
+version: 1.0.0
 repository: https://github.com/MogamboPuri/cs_beldex
 homepage: https://github.com/MogamboPuri/cs_beldex
 issue_tracker: https://github.com/MogamboPuri/cs_beldex/issues
@@ -9,14 +9,15 @@ environment:
   sdk: ">=3.5.3 <4.0.0"
   flutter: ">=3.24.0"
 
-# Add regular dependencies here.
 dependencies:
   flutter:
     sdk: flutter
   cs_beldex_flutter_libs_platform_interface: 1.0.0
-  cs_beldex_flutter_libs_android: 1.1.1
-  cs_beldex_flutter_libs_linux: 1.3.0
-  cs_beldex_flutter_libs_windows: 1.2.0
+  cs_beldex_flutter_libs_android: 1.0.0
+  cs_beldex_flutter_libs_ios: 1.0.0
+  cs_beldex_flutter_libs_linux: 1.0.0
+  cs_beldex_flutter_libs_macos: 1.0.0
+  cs_beldex_flutter_libs_windows: 1.0.0
 
 dev_dependencies:
   flutter_test:
@@ -28,7 +29,11 @@ flutter:
     platforms:
       android:
         default_package: cs_beldex_flutter_libs_android
+      ios:
+        default_package: cs_beldex_flutter_libs_ios
       linux:
         default_package: cs_beldex_flutter_libs_linux
+      macos:
+        default_package: cs_beldex_flutter_libs_macos
       windows:
         default_package: cs_beldex_flutter_libs_windows
