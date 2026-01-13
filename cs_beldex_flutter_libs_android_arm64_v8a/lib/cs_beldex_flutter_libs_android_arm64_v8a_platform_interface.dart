@@ -2,13 +2,15 @@ import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
 import 'cs_beldex_flutter_libs_android_arm64_v8a_method_channel.dart';
 
-abstract class CsBeldexFlutterLibsAndroidArm64V8aPlatform extends PlatformInterface {
+abstract class CsBeldexFlutterLibsAndroidArm64V8aPlatform
+    extends PlatformInterface {
   /// Constructs a CsBeldexFlutterLibsAndroidArm64V8aPlatform.
   CsBeldexFlutterLibsAndroidArm64V8aPlatform() : super(token: _token);
 
   static final Object _token = Object();
 
-  static CsBeldexFlutterLibsAndroidArm64V8aPlatform _instance = MethodChannelCsBeldexFlutterLibsAndroidArm64V8a();
+  static CsBeldexFlutterLibsAndroidArm64V8aPlatform _instance =
+      MethodChannelCsBeldexFlutterLibsAndroidArm64V8a();
 
   /// The default instance of [CsFlutterLibsAndroidArm64V8aPlatform] to use.
   ///
