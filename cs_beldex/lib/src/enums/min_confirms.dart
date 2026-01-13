@@ -1,7 +1,7 @@
 enum MinConfirms {
-    beldex(10),
-    other(0);
+  beldex(10),
+  other(0);
 
-    final int value;
-    const MinConfirms(this.value);
+  final int value;
+  const MinConfirms(this.value);
 }
