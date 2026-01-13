@@ -2,13 +2,15 @@ import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
 import 'cs_beldex_flutter_libs_android_armeabi_v7a_method_channel.dart';
 
-abstract class CsBeldexFlutterLibsAndroidArmeabiV7aPlatform extends PlatformInterface {
+abstract class CsBeldexFlutterLibsAndroidArmeabiV7aPlatform
+    extends PlatformInterface {
   /// Constructs a CsBeldexFlutterLibsAndroidArmeabiV7aPlatform.
   CsBeldexFlutterLibsAndroidArmeabiV7aPlatform() : super(token: _token);
 
   static final Object _token = Object();
 
-  static CsBeldexFlutterLibsAndroidArmeabiV7aPlatform _instance = MethodChannelCsBeldexFlutterLibsAndroidArmeabiV7a();
+  static CsBeldexFlutterLibsAndroidArmeabiV7aPlatform _instance =
+      MethodChannelCsBeldexFlutterLibsAndroidArmeabiV7a();
 
   /// The default instance of [CsBeldexFlutterLibsAndroidArmeabiV7aPlatform] to use.
   ///
