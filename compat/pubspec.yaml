@@ -1,4 +1,4 @@
-name: compat
+name: bdx_compat
 description: A compat layer for old flutter_libbeldex.
 version: 2.0.0
 repository: https://github.com/MogamboPuri/cs_beldex
