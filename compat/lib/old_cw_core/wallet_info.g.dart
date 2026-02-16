@@ -8,7 +8,7 @@ part of 'wallet_info.dart';
 
 class WalletInfoAdapter extends TypeAdapter<WalletInfo> {
   @override
-  final int typeId = 14;
+  final int typeId = 31;
 
   @override
   WalletInfo read(BinaryReader reader) {
