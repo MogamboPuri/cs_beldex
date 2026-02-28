@@ -12,7 +12,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  cs_beldex_flutter_libs_platform_interface: ^1.0.0
+  cs_beldex_flutter_libs_platform_interface: 
+    git:
+      url: https://github.com/MogamboPuri/cs_beldex.git
+      path: cs_beldex_flutter_libs_platform_interface
 
 dev_dependencies:
   flutter_test:
