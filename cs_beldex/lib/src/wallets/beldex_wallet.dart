@@ -20,7 +20,7 @@ class BeldexWallet extends Wallet {
 
   int? _walletPointer;
   int _getWalletPointer() {
-    Logging.log?.i("Getting wallet pointer for wallet at address ${_walletPointer}");
+    Logging.log?.i("Getting wallet pointer for wallet at address $_walletPointer");
     if (_walletPointer == null) {
       throw Exception(
         "BeldexWallet was closed!",
