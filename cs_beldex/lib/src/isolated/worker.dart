@@ -469,11 +469,12 @@ int _restoreDeterministicWalletFromSpendKey(Map<String, dynamic> args) {
 }
 
 int _openWallet(Map<String, dynamic> args) {
+  Logging.log?.i("Opening wallet ${args["path"]} from _openWallet");
   final wmPointer = Pointer<Void>.fromAddress(args["wm"] as int);
   final path = args["path"] as String;
   final password = args["pw"] as String;
   final networkType = args["net"] as int;
-  Logging.log?.i("Opening wallet at path: $path with network type: $networkType");
+
   final walletPointer = bdx_wm_ffi.openWallet(
     wmPointer,
     path: path,
@@ -824,8 +825,6 @@ List<Map<String, dynamic>> _getOutputs(Map<String, dynamic> args) {
   final includeSpent = args["includeSpent"] as bool;
 
   final coinsPointer = bdx_ffi.getCoinsPointer(walletPointer);
-
-  Logging.log?.w("Getting outputs for wallet ${walletPointer.address}");
 
   if (refresh) {
     bdx_ffi.refreshCoins(coinsPointer);
