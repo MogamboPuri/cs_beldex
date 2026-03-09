@@ -71,15 +71,9 @@ abstract class Wallet {
     // FIXME: hardcoded value;
     switch (priority) {
       case TransactionPriority.normal:
-        return 24590000;
-      case TransactionPriority.low:
-        return 123050000;
-      case TransactionPriority.medium:
-        return 245029999;
-      case TransactionPriority.high:
-        return 614530000;
-      case TransactionPriority.last:
-        return 26021600000;
+        return 9000000;
+      case TransactionPriority.flash:
+        return 36800000;
     }
   }
 
