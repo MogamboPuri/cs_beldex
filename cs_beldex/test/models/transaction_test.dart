@@ -188,5 +188,48 @@ void main() {
 
       expect(transaction.isPending, true);
     });
+
+    test('fromRawMap should normalize negative amounts', () {
+      final transaction = Transaction.fromRawMap({
+        'displayLabel': 'Transaction 1',
+        'description': 'Test transaction',
+        'fee': '100',
+        'confirmations': 10,
+        'blockHeight': 5,
+        'accountIndex': 0,
+        'addressIndexes': [0, 1],
+        'paymentId': 'payment_id_123',
+        'amount': '-1000',
+        'isSpend': true,
+        'hash': 'transaction_hash',
+        'key': 'transaction_key',
+        'timeStamp': DateTime.now().millisecondsSinceEpoch ~/ 1000,
+      });
+
+      expect(transaction.amount, BigInt.from(1000));
+      expect(transaction.isSpend, isTrue);
+    });
+
+    test('fromMap should normalize negative amounts', () {
+      final transaction = Transaction.fromMap({
+        'displayLabel': 'Transaction 1',
+        'description': 'Test transaction',
+        'fee': '100',
+        'confirmations': 10,
+        'blockHeight': 5,
+        'accountIndex': 0,
+        'addressIndexes': [0, 1],
+        'paymentId': 'payment_id_123',
+        'amount': '-1000',
+        'isSpend': true,
+        'hash': 'transaction_hash',
+        'key': 'transaction_key',
+        'timeStamp': DateTime.now().toIso8601String(),
+        'minConfirms': MinConfirms.beldex.value,
+      });
+
+      expect(transaction.amount, BigInt.from(1000));
+      expect(transaction.isSpend, isTrue);
+    });
   });
 }

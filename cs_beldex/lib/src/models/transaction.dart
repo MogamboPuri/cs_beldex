@@ -92,6 +92,7 @@ class Transaction {
   }
 
   static Transaction fromMap(Map<String, dynamic> map) {
+    final parsedAmount = BigInt.parse(map['amount'] as String).abs();
     return Transaction(
       displayLabel: map['displayLabel'] as String,
       description: map['description'] as String,
@@ -101,7 +102,7 @@ class Transaction {
       accountIndex: map['accountIndex'] as int,
       addressIndexes: Set<int>.from(map['addressIndexes'] as List),
       paymentId: map['paymentId'] as String,
-      amount: BigInt.parse(map['amount'] as String),
+      amount: parsedAmount,
       isSpend: map['isSpend'] as bool,
       hash: map['hash'] as String,
       key: map['key'] as String,
@@ -112,6 +113,7 @@ class Transaction {
   }
 
   static Transaction fromRawMap(Map<String, dynamic> map) {
+    final parsedAmount = BigInt.parse(map['amount'] as String).abs();
     return Transaction(
       displayLabel: map['displayLabel'] as String,
       description: map['description'] as String,
@@ -121,7 +123,7 @@ class Transaction {
       accountIndex: map['accountIndex'] as int,
       addressIndexes: Set<int>.from(map['addressIndexes'] as List),
       paymentId: map['paymentId'] as String,
-      amount: BigInt.parse(map['amount'] as String),
+      amount: parsedAmount,
       isSpend: map['isSpend'] as bool,
       hash: map['hash'] as String,
       key: map['key'] as String,
